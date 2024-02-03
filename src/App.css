@@ -1,21 +1,6 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Remove the min-height from the App-header if it's not necessary */
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +9,70 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.map-wrapper {
+  position: relative;
+  height: 100%; /* Adjust height as needed */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.map-controls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000; /* Ensures the button is above the map */
 }
+
+.leaflet-container {
+  height: 100%; /* Full height */
+  width: 100%; /* Full width */
+}
+
+/* Ensure the app container fills the remaining height */
+.app-container {
+  display: flex;
+  flex-direction: row; /* Align children horizontally */
+  height: calc(100vh - 60px); /* Adjust the 60px to the actual height of your header/footer */
+  width: 100%;
+}
+
+.map-container {
+  flex-grow: 3; /* Allows this container to grow and take up 3/4 of the space */
+}
+
+.city-container {
+  flex-grow: 1; /* Takes up 1/4 of the space */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center city name vertically */
+  padding: 20px; /* Add some padding */
+  background-color: #f0f0f0; /* Different background to distinguish from map */
+}
+.feedback-box {
+  margin-top: 1rem; /* Adds space between the button and the feedback box */
+  padding: 0.5rem 1rem; /* Top and bottom padding of 0.5rem and left and right padding of 1rem */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 0.25rem; /* Rounded corners */
+  background-color: #f8f8f8; /* Light background color for the box */
+  text-align: center; /* Center the text inside the box */
+  color: #333; /* Dark text color for readability */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for some depth */
+  width: fit-content; /* Only take up as much width as necessary */
+  margin-left: auto; /* With auto margins on left and right, */
+  margin-right: auto; /* the box will center within its container */
+}
+.city-name {
+  background-color: #ffffff; /* Change the background color to white */
+  color: #333333; /* Change the text color for better contrast */
+  padding: 20px; /* Add padding to increase the size of the box */
+  margin: 0; /* Reset margin */
+  border-radius: 10px; /* Rounded corners for the box */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+  width: 80%; /* Set a max-width for the box, you can adjust as needed */
+  text-align: center; /* Center the text inside the box */
+}
+
+.leaflet-container {
+  height: 100%; /* Full height */
+  width: 100%; /* Fixes map not filling the container */
+}
+
+/* Remove any unnecessary keyframes or animations if they are not used */
