@@ -75,4 +75,15 @@
   width: 100%; /* Fixes map not filling the container */
 }
 
+.feedback-correct {
+  background-color: rgba(111, 194, 111, 0.623); /* Opaque green */
+  /* Rest of your styles for correct feedback */
+}
+
+.feedback-incorrect {
+  background-color: rgba(204, 98, 98, 0.596); /* Opaque red */
+  /* Rest of your styles for incorrect feedback */
+}
+
+
 /* Remove any unnecessary keyframes or animations if they are not used */

@@ -18,6 +18,7 @@ const MapComponent: React.FC = () => {
   const [markerPosition, setMarkerPosition] = useState<L.LatLng | null>(null);
   const [showCorrectLocation, setShowCorrectLocation] = useState(false);
   const [attempts, setAttempts] = useState(0); 
+  const [isGuessCorrect, setIsGuessCorrect] = useState(false);
 
   //Pen icons 
   const greenPinIcon = L.icon({
@@ -33,12 +34,12 @@ const MapComponent: React.FC = () => {
     iconAnchor: [12, 41],
     popupAnchor: [1, -34],
   });
-
+  
   useEffect(() => {
     setShowCorrectLocation(false);
+    setIsGuessCorrect(false);
     setAttempts(0); // Also reset attempts when city changes
   }, [currentCityIndex]);
-
 
   const MapEvents = () => {
     useMapEvents({
@@ -51,9 +52,11 @@ const MapComponent: React.FC = () => {
         if (guessLatLng.distanceTo(cityLatLng) <= radius) {
           dispatch({ type: 'SET_GUESS_CORRECTNESS', payload: true });
           dispatch(setCurrentCity((currentCityIndex + 1) % cities.length));
+          setIsGuessCorrect(true); // Set guess as correct
           setAttempts(0); // Reset attempts for the next city
         } else {
           dispatch({ type: 'SET_GUESS_CORRECTNESS', payload: false });
+          setIsGuessCorrect(false); // Set guess as incorrect
           setAttempts((prevAttempts) => prevAttempts + 1); // Increment attempts here
         }
       },
@@ -87,10 +90,10 @@ const MapComponent: React.FC = () => {
         {showCorrectLocation && currentCity && (
           <Marker 
             position={[currentCity.latitude, currentCity.longitude]} 
-            icon={greenPinIcon} 
+            icon={isGuessCorrect ? redPinIcon : greenPinIcon} // Use green pin if guess is correct, else red
           />
         )}
-        {markerPosition && <Marker position={markerPosition} icon={redPinIcon} />}
+        {markerPosition && <Marker position={markerPosition} icon={isGuessCorrect ? greenPinIcon : redPinIcon}  />}
         <MapEvents />
       </MapContainer>
     </div>

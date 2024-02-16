@@ -1,22 +1,267 @@
 [
     {
-        "BYNAVN": "Brande",
-        "latitude": 55.7326,
-        "longitude": 9.1124
-    },
-    {
         "BYNAVN": "Aalestrup",
-        "latitude": 56.69630,
-        "longitude": 9.49272
-    },
-    {
-        "BYNAVN": "Aulum",
-        "latitude": 56.2,
-        "longitude": 8.78
+        "latitude": 56.6952989,
+        "longitude": 9.4930029
     },
     {
         "BYNAVN": "Ans",
-        "latitude": 56.30,
-        "longitude": 9.58
+        "latitude": 56.307027,
+        "longitude": 9.5895088
+    },
+    {
+        "BYNAVN": "Aulum",
+        "latitude": 56.2649053,
+        "longitude": 8.7869814
+    },
+    {
+        "BYNAVN": "Bedsted",
+        "latitude": 56.8094821,
+        "longitude": 8.4056568
+    },
+    {
+        "BYNAVN": "Bjerringbro",
+        "latitude": 56.3758414,
+        "longitude": 9.656576
+    },
+    {
+        "BYNAVN": "Bording",
+        "latitude": 56.1465072,
+        "longitude": 9.2753054
+    },
+    {
+        "BYNAVN": "Brande",
+        "latitude": 55.9445468,
+        "longitude": 9.1282868
+    },
+    {
+        "BYNAVN": "Bryrup",
+        "latitude": 56.0231999,
+        "longitude": 9.5231724
+    },
+    {
+        "BYNAVN": "Brædstrup",
+        "latitude": 55.9722463,
+        "longitude": 9.610092
+    },
+    {
+        "BYNAVN": "Bækmarksbro",
+        "latitude": 56.4164741,
+        "longitude": 8.3084214
+    },
+    {
+        "BYNAVN": "Daugbjerg",
+        "latitude": 56.435017,
+        "longitude": 9.1314304
+    },
+    {
+        "BYNAVN": "Durup",
+        "latitude": 56.7178993,
+        "longitude": 9.6212125
+    },
+    {
+        "BYNAVN": "Ejstrupholm",
+        "latitude": 55.9843819,
+        "longitude": 9.2930027
+    },
+    {
+        "BYNAVN": "Engesvang",
+        "latitude": 56.1703216,
+        "longitude": 9.3511945
+    },
+    {
+        "BYNAVN": "Farsø",
+        "latitude": 56.7722256,
+        "longitude": 9.3399599
+    },
+    {
+        "BYNAVN": "Feldborg",
+        "latitude": 56.3362275,
+        "longitude": 8.9368409
+    },
+    {
+        "BYNAVN": "Fiskbæk",
+        "latitude": 56.5121348,
+        "longitude": 9.3089137
+    },
+    {
+        "BYNAVN": "Frederiks",
+        "latitude": 56.3411629,
+        "longitude": 9.2560458
+    },
+    {
+        "BYNAVN": "Funder",
+        "latitude": 56.1491355,
+        "longitude": 9.4720602
+    },
+    {
+        "BYNAVN": "Fårbæk",
+        "latitude": 56.3682303,
+        "longitude": 9.0737307
+    },
+    {
+        "BYNAVN": "Fårvang",
+        "latitude": 56.2681439,
+        "longitude": 9.7267735
+    },
+    {
+        "BYNAVN": "Galten",
+        "latitude": 56.154066,
+        "longitude": 9.9098817
+    },
+    {
+        "BYNAVN": "Gedsted",
+        "latitude": 56.6892939,
+        "longitude": 9.3334277
+    },
+    {
+        "BYNAVN": "Give",
+        "latitude": 55.845552,
+        "longitude": 9.2401542
+    },
+    {
+        "BYNAVN": "Gjellerup",
+        "latitude": 56.1460074,
+        "longitude": 9.0471326
+    },
+    {
+        "BYNAVN": "Gjern",
+        "latitude": 56.2264181,
+        "longitude": 9.7393316
+    },
+    {
+        "BYNAVN": "Glyngøre",
+        "latitude": 56.759744,
+        "longitude": 8.8739004
+    },
+    {
+        "BYNAVN": "Grønhøj",
+        "latitude": 56.3669319,
+        "longitude": 9.2092466
+    },
+    {
+        "BYNAVN": "Haderup",
+        "latitude": 56.6974776,
+        "longitude": 10.1243262
+    },
+    {
+        "BYNAVN": "Hadsten",
+        "latitude": 56.3290887,
+        "longitude": 10.0523863
+    },
+    {
+        "BYNAVN": "Hammel",
+        "latitude": 56.2526132,
+        "longitude": 9.8610556
+    },
+    {
+        "BYNAVN": "Hammershøj",
+        "latitude": 56.5016333,
+        "longitude": 9.7503501
+    },
+    {
+        "BYNAVN": "Hammerum",
+        "latitude": 56.1343054,
+        "longitude": 9.0553788
+    },
+    {
+        "BYNAVN": "Harboøre",
+        "latitude": 56.6174264,
+        "longitude": 8.1806946
+    },
+    {
+        "BYNAVN": "Herning",
+        "latitude": 56.1379757,
+        "longitude": 8.9746623
+    },
+    {
+        "BYNAVN": "Hodsager",
+        "latitude": 56.3158702,
+        "longitude": 8.8539077
+    },
+    {
+        "BYNAVN": "Hogager",
+        "latitude": 56.3719751,
+        "longitude": 8.8525686
+    },
+    {
+        "BYNAVN": "Holstebro",
+        "latitude": 56.3590324,
+        "longitude": 8.6159188
+    },
+    {
+        "BYNAVN": "Horsens",
+        "latitude": 55.8611696,
+        "longitude": 9.8444774
+    },
+    {
+        "BYNAVN": "Hurup Thy",
+        "latitude": 56.7511648,
+        "longitude": 8.4178998
+    },
+    {
+        "BYNAVN": "Hvalpsund",
+        "latitude": 56.7013574,
+        "longitude": 9.2070497
+    },
+    {
+        "BYNAVN": "Hvide Sande",
+        "latitude": 56.0057884,
+        "longitude": 8.1288435
+    },
+    {
+        "BYNAVN": "Ikast",
+        "latitude": 56.1390178,
+        "longitude": 9.1547931
+    },
+    {
+        "BYNAVN": "Ilskov",
+        "latitude": 56.2374648,
+        "longitude": 9.0892145
+    },
+    {
+        "BYNAVN": "Karup",
+        "latitude": 56.3111225,
+        "longitude": 9.1706768
+    },
+    {
+        "BYNAVN": "Kibæk",
+        "latitude": 56.0349566,
+        "longitude": 8.8583992
+    },
+    {
+        "BYNAVN": "Kjellerup",
+        "latitude": 56.2834926,
+        "longitude": 9.4400132
+    },
+    {
+        "BYNAVN": "Klejtrup",
+        "latitude": 56.5902663,
+        "longitude": 9.6337994
+    },
+    {
+        "BYNAVN": "Kølkær",
+        "latitude": 56.0649686,
+        "longitude": 9.0864658
+    },
+    {
+        "BYNAVN": "Langå",
+        "latitude": 56.390979,
+        "longitude": 9.8936301
+    },
+    {
+        "BYNAVN": "Lem",
+        "latitude": 56.0275264,
+        "longitude": 8.3852184
+    },
+    {
+        "BYNAVN": "Lemvig",
+        "latitude": 56.5486971,
+        "longitude": 8.3046456
+    },
+    {
+        "BYNAVN": "Lind",
+        "latitude": 56.1059266,
+        "longitude": 8.9785841
     }
 ]

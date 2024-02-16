@@ -4,32 +4,23 @@ import { useSelector } from 'react-redux';
 import { CityState } from '../store/cityTypes';
 
 const FeedbackComponent: React.FC = () => {
-  const lastGuessCorrect = useSelector((state: CityState) => state.lastGuessCorrect);
-  const [attempts, setAttempts] = useState(0);
-
-  useEffect(() => {
-    // If the last guess was correct, reset the attempt count.
-    if (lastGuessCorrect) {
-      setAttempts(0);
-    }
-  }, [lastGuessCorrect]);
-
-   // Call this function whenever the user makes a guess
-   const incrementAttempts = () => {
-    setAttempts((prev) => prev + 1);
+    const lastGuessCorrect = useSelector((state: CityState) => state.lastGuessCorrect);
+  
+    const feedbackClass = lastGuessCorrect
+      ? "feedback-box feedback-correct"
+      : "feedback-box feedback-incorrect";
+  
+    return (
+      <div className={feedbackClass}>
+        {lastGuessCorrect !== null && (
+          <div>
+            {lastGuessCorrect
+              ? 'Correct! You found the city.'
+              : 'Try again! That’s not the right location.'}
+          </div>
+        )}
+      </div>
+    );
   };
-
-  return (
-    <div className="feedback-box" >
-      {lastGuessCorrect !== null && (
-        <div >
-          {lastGuessCorrect ? 'Correct! You found the city.' : 'Try again! That’s not the right location.'}
-          {/* <p>Attempts: {attempts}</p> */}
-
-        </div>
-      )}
-    </div>
-  );
-};
-
-export default FeedbackComponent;
+  
+  export default FeedbackComponent;
