@@ -76,7 +76,7 @@ const MapComponent: React.FC = () => {
       <MapContainer 
         center={[40, 20]} // Adjust as needed
         zoom={9}
-        style={{ height: '100%', width: '60%' }}
+        style={{ height: '100%', width: '100%' }}
         maxBounds={L.latLngBounds(L.latLng(54.5, 8.0), L.latLng(57.8, 12.6))}
         minZoom={8.1}
         maxZoom={8.1}
