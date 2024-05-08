@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/denmark-map-game/static/css/main.0137962f.css",
+    "main.js": "/denmark-map-game/static/js/main.2a8db421.js",
+    "static/js/787.847af411.chunk.js": "/denmark-map-game/static/js/787.847af411.chunk.js",
+    "static/media/greenPin.png": "/denmark-map-game/static/media/greenPin.ea52a9e66b89b458411d.png",
+    "static/media/redPin.png": "/denmark-map-game/static/media/redPin.5da43ec58a2e961d16fc.png",
+    "index.html": "/denmark-map-game/index.html",
+    "main.0137962f.css.map": "/denmark-map-game/static/css/main.0137962f.css.map",
+    "main.2a8db421.js.map": "/denmark-map-game/static/js/main.2a8db421.js.map",
+    "787.847af411.chunk.js.map": "/denmark-map-game/static/js/787.847af411.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0137962f.css",
+    "static/js/main.2a8db421.js"
+  ]
+}
